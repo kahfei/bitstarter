@@ -7,7 +7,7 @@ app.use(express.logger());
 fs.readFile('index.html', function(err, data) {
   if(err) throw err;
   var buf = new Buffer(data);
-}
+});
 
 app.get('/', function(request, response) {
   response.send(buf.toString('utf-8');
